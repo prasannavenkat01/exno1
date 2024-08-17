@@ -41,12 +41,14 @@ df.isnull().any()
 ```
 df.dropna()
 ```
-![Screenshot 2024-08-17 051713](https://github.com/user-attachments/assets/aa6c12ea-3c95-48d3-b534-ce2cf1e3585f
+![Screenshot 2024-08-17 051713](https://github.com/user-attachments/assets/4dd40918-2499-4e51-b7e8-93365c99b994)
 
 ```
 df.fillna(0)
 ```
-![image](https://github.com/user-attachments/assets/5f0580f7-7651-4baf-bc94-b763107504dd)
+![image](https://github.com/user-attachments/assets/5f0580f7-7651-4baf-bc94-b763107504dd
+
+
 
 
 

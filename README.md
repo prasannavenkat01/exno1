@@ -38,6 +38,17 @@ df.isnull().any()
 ```
 ![Screenshot 2024-08-17 051202](https://github.com/user-attachments/assets/fe4d875b-11c6-40de-a772-a4505d35e056)
 
+```
+df.dropna()
+```
+![Screenshot 2024-08-17 051713](https://github.com/user-attachments/assets/aa6c12ea-3c95-48d3-b534-ce2cf1e3585f
+
+```
+df.fillna(0)
+```
+![image](https://github.com/user-attachments/assets/5f0580f7-7651-4baf-bc94-b763107504dd)
+
+
 
 
 

@@ -122,12 +122,61 @@ sns.boxplot(x='sepal_width',data=delid)
 
 <B>Z-SCORE<B/>
 
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import scipy.stats as stats
+
+dataset=pd.read_csv("heights.csv")
+dataset
+```
+![Screenshot 2024-08-17 055645](https://github.com/user-attachments/assets/0ef48b71-46f1-4b20-b3da-000ec195a73e)
 
 
+```
+df = pd.read_csv("heights.csv")
+q1 = df['height'].quantile(0.25)
+q2 = df['height'].quantile(0.5)
+q3 = df['height'].quantile(0.75)
+
+iqr = q3-q1
+iqr
+```
+![Screenshot 2024-08-17 055924](https://github.com/user-attachments/assets/706cc8ea-66fb-462d-91bb-e32d28d92ffb)
+
+```
+low = q1 - 1.5*iqr
+low
+```
+![image](https://github.com/user-attachments/assets/7f3c3f58-602f-4f9a-a18e-8da072188dcf)
+
+```
+high = q3 + 1.5*iqr
+high
+```
+![image](https://github.com/user-attachments/assets/ea6c5afa-c262-46b0-a40b-71d44bd2eba7)
 
 
+```
+df1 = df[((df['height'] >=low)& (df['height'] <=high))]
+df1
+```
+![image](https://github.com/user-attachments/assets/b82fb361-8414-41eb-8798-99fe70ad9559)
+
+```
+z = np.abs(stats.zscore(df['height']))
+z
+```
+![image](https://github.com/user-attachments/assets/6ad54e9e-574f-4c98-804f-926f52f78240)
+
+```
+df1 = df[z<3]
+df1
+```
+![image](https://github.com/user-attachments/assets/1808aaf3-2a3d-4047-b204-50c04f926ffb)
 
 
 
 # Result
-          <<include your Result here>>
+Thus we have cleaned the data and removed the outliers by detection using IQR and Z-score method.

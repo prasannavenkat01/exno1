@@ -21,6 +21,7 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
+<b>
 ```
 import pandas as pd
 df = pd.read_csv("SAMPLEIDS.csv")
@@ -118,8 +119,7 @@ sns.boxplot(x='sepal_width',data=delid)
 ```
 ![image](https://github.com/user-attachments/assets/98541071-6c0a-49ec-b337-3e03792fba2b)
 
-
-
+</b>
 <B>Z-SCORE<B/>
 
 ```

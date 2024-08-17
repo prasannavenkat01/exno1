@@ -33,6 +33,13 @@ df.isnull().sum()
 ```
 ![image](https://github.com/user-attachments/assets/8684b84a-8dd1-4218-bed8-5286c8f0ffba)
 
+```
+df.isnull().any()
+```
+![image](https://github.com/user-attachments/assets/2ff738e1-6468-4455-876a-ed20dd2e8593
+
+
+
 
 
 

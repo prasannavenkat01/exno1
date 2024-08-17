@@ -36,7 +36,10 @@ df.isnull().sum()
 ```
 df.isnull().any()
 ```
-![image](https://github.com/user-attachments/assets/2ff738e1-6468-4455-876a-ed20dd2e8593
+![Screenshot 2024-08-17 051202](https://github.com/user-attachments/assets/fe4d875b-11c6-40de-a772-a4505d35e056)
+
+
+
 
 
 

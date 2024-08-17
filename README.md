@@ -51,12 +51,20 @@ df.fillna(0)
 ```
 df.fillna(method = 'ffill')
 ```
-![image](https://github.com/user-attachments/assets/bd8d3289-3654-4601-9f12-ce11d59fecb5
+![Screenshot 2024-08-17 052515](https://github.com/user-attachments/assets/2a613548-327b-4001-b75e-a2ad60eb5e94)
+
 
 ```
 df.fillna(method = 'bfill')
 ```
-![image](https://github.com/user-attachments/assets/9613ea20-495c-48c5-bfd8-eea52d536732)
+![image](https://github.com/user-attachments/assets/9613ea20-495c-48c5-bfd8-eea52d536732
+
+```
+df_dropped = df.dropna()
+df_dropped
+```
+![image](https://github.com/user-attachments/assets/3d4e853c-95a2-456e-9358-afa1c76720fd)
+
 
 
 

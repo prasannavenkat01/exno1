@@ -46,7 +46,8 @@ df.dropna()
 ```
 df.fillna(0)
 ```
-![image](https://github.com/user-attachments/assets/5f0580f7-7651-4baf-bc94-b763107504dd
+![Screenshot 2024-08-17 051915](https://github.com/user-attachments/assets/57581ab2-bd73-4ddb-afec-927f25e2267e)
+
 
 
 

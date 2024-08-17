@@ -72,12 +72,55 @@ df.fillna({'GENDER':'MALE','NAME':'SRI','ADDRESS':'POONAMALEE','M1':98,'M2':87,'
 ![Screenshot 2024-08-17 053307](https://github.com/user-attachments/assets/27c8b07d-51f0-47c2-a66b-b180b9537ba9)
 
 
+IQR(Inter Quartile Range)
+
+```
+import pandas as pd
+ir=pd.read_csv('iris.csv')
+ir
+```
+![image](https://github.com/user-attachments/assets/5fd7ef06-f4d1-488c-b667-c8fc619cb3ac)
+
+```
+ir.describe()
+```
+![image](https://github.com/user-attachments/assets/a427fe5f-d383-454e-8a62-b2fa5e00ba8d)
+
+```
+import seaborn as sns
+sns.boxplot(x='sepal_width',data=ir)
+```
+![image](https://github.com/user-attachments/assets/c09097d6-dd5d-4f4d-9798-dbfff47de73b)
+
+```
+c1=ir.sepal_width.quantile(0.25)
+c3=ir.sepal_width.quantile(0.75)
+iq=c3-c1
+print(c3)
+```
+![image](https://github.com/user-attachments/assets/df3e1f7f-9434-4681-b6ba-b9b5f6b22d74)
+
+```
+rid=ir[((ir.sepal_width<(c1-1.5*iq))|(ir.sepal_width>(c3+1.5*iq)))]
+rid['sepal_width']
+```
+![image](https://github.com/user-attachments/assets/11d0f6ab-9069-44f7-b3e3-4d9fb7d0e094)
+
+
+```
+delid=ir[~((ir.sepal_width<(c1-1.5*iq))|(ir.sepal_width>(c3+1.5*iq)))]
+delid
+```
+![image](https://github.com/user-attachments/assets/7a426a70-bf4e-4bce-9624-3b9f77aceade)
+
+```
+sns.boxplot(x='sepal_width',data=delid)
+```
+![image](https://github.com/user-attachments/assets/98541071-6c0a-49ec-b337-3e03792fba2b)
 
 
 
-
-
-
+<B>Z-SCORE<B/>
 
 
 

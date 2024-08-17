@@ -28,5 +28,13 @@ df
 ```
 ![Screenshot 2024-08-17 045947](https://github.com/user-attachments/assets/9b21a511-74e7-4391-8fec-7d484d5c8db2)
 
+```
+df.isnull().sum()
+```
+![image](https://github.com/user-attachments/assets/8684b84a-8dd1-4218-bed8-5286c8f0ffba)
+
+
+
+
 # Result
           <<include your Result here>>

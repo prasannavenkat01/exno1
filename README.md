@@ -57,13 +57,21 @@ df.fillna(method = 'ffill')
 ```
 df.fillna(method = 'bfill')
 ```
-![image](https://github.com/user-attachments/assets/9613ea20-495c-48c5-bfd8-eea52d536732
+![Screenshot 2024-08-17 052653](https://github.com/user-attachments/assets/aaac5d62-cc49-44c1-878c-cd00e6eae96e)
 
 ```
 df_dropped = df.dropna()
 df_dropped
 ```
 ![image](https://github.com/user-attachments/assets/3d4e853c-95a2-456e-9358-afa1c76720fd)
+
+
+```
+df.fillna({'GENDER':'MALE','NAME':'SRI','ADDRESS':'POONAMALEE','M1':98,'M2':87,'M3':76,'M4':92,'TOTAL':305,'AVG':89.999999})
+```
+![Screenshot 2024-08-17 053307](https://github.com/user-attachments/assets/27c8b07d-51f0-47c2-a66b-b180b9537ba9)
+
+
 
 
 

@@ -48,6 +48,16 @@ df.fillna(0)
 ```
 ![Screenshot 2024-08-17 051915](https://github.com/user-attachments/assets/57581ab2-bd73-4ddb-afec-927f25e2267e)
 
+```
+df.fillna(method = 'ffill')
+```
+![image](https://github.com/user-attachments/assets/bd8d3289-3654-4601-9f12-ce11d59fecb5
+
+```
+df.fillna(method = 'bfill')
+```
+![image](https://github.com/user-attachments/assets/9613ea20-495c-48c5-bfd8-eea52d536732)
+
 
 
 
